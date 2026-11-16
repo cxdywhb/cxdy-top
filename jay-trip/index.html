@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>周杰伦广州之旅 · 三版行程（2026.12.5–12.8）</title>
+<style>
+  :root{
+    --accent:#3E63DD; --ink:#1B2333; --sub:#5B6474; --line:#E4E7EE;
+    --bg:#F5F6F9; --card:#FFFFFF; --chip:#EEF1FB; --warn:#B45309; --warnbg:#FDF3E3;
+    --ok:#177245; --okbg:#E7F4EC;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  body{margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+    line-height:1.65; font-size:15px;}
+  .wrap{max-width:760px; margin:0 auto; padding:20px 16px 56px;}
+  header.top{padding:14px 2px 4px;}
+  .kicker{color:var(--accent); font-weight:700; font-size:13px; letter-spacing:.14em;}
+  h1{font-size:26px; margin:6px 0 4px; line-height:1.3;}
+  .meta{color:var(--sub); font-size:14px;}
+  .meta b{color:var(--ink);}
+  .tabs{position:sticky; top:10px; z-index:5; display:flex; gap:6px; background:#fff;
+    border:1px solid var(--line); border-radius:999px; padding:5px; margin:18px 0 20px;
+    box-shadow:0 6px 20px rgba(27,35,51,.08);}
+  .tabs button{flex:1; border:0; background:transparent; padding:10px 4px; border-radius:999px;
+    font-size:15px; font-weight:600; color:var(--sub); cursor:pointer; font-family:inherit;}
+  .tabs button.on{background:var(--accent); color:#fff;}
+  .tabs button small{display:block; font-size:11px; font-weight:500; opacity:.85;}
+  section.ver{display:none;}
+  section.ver.on{display:block;}
+  .route{background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:14px 16px; box-shadow:0 2px 10px rgba(27,35,51,.05); margin-bottom:14px;
+    font-weight:600; font-size:15px;}
+  .route span{color:var(--accent);}
+  .trade{border-radius:16px; padding:14px 16px; margin-bottom:18px; font-size:14px;
+    background:var(--chip); border:1px solid #D8DFF7;}
+  .trade b{color:var(--accent);}
+  .day{background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:16px 18px 8px; margin-bottom:14px; box-shadow:0 2px 10px rgba(27,35,51,.05);}
+  .day h2{font-size:17px; margin:0 0 10px;}
+  .day h2 .d{color:var(--accent); margin-right:8px;}
+  .day h2 .w{color:var(--sub); font-size:13px; font-weight:500;}
+  .ev{display:flex; gap:12px; padding:9px 0; border-top:1px dashed var(--line);}
+  .ev:first-of-type{border-top:0;}
+  .tm{flex:0 0 86px; color:var(--accent); font-weight:700; font-size:13px; padding-top:2px;}
+  .ev .tx{flex:1;}
+  .ev .tx b{font-size:15px;}
+  .ev .tx p{margin:2px 0 6px; color:var(--sub); font-size:13.5px;}
+  .tag{display:inline-block; font-size:11px; font-weight:700; padding:1px 8px; border-radius:999px;
+    background:var(--okbg); color:var(--ok); vertical-align:2px; margin-left:6px;}
+  .tag.alt{background:var(--chip); color:var(--accent);}
+  .tag.todo{background:var(--warnbg); color:var(--warn);}
+  .box{background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:16px 18px; margin-bottom:14px; box-shadow:0 2px 10px rgba(27,35,51,.05);}
+  .box h3{margin:0 0 8px; font-size:16px;}
+  .box ul{margin:0; padding-left:20px; color:var(--sub); font-size:14px;}
+  .box ul b{color:var(--ink);}
+  .note{color:var(--sub); font-size:12.5px; margin-top:16px;}
+  footer{color:var(--sub); font-size:12.5px; text-align:center; margin-top:28px;}
+  @media (max-width:520px){ .tm{flex-basis:70px;} h1{font-size:23px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="kicker">2026.12.5 – 12.8 · 昆明出发</div>
+    <h1>周杰伦广州演唱会之旅</h1>
+    <div class="meta"><b>2 人</b> · 演唱会门票 <b>已购</b> · 酒店 <b>舒适型（300–600）</b> · 三个版本点上方切换，对比着看</div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-v="v1" class="on">优化版<small>广州 · 汕头 · 潮州</small></button>
+    <button data-v="v2">广佛版<small>广州 · 佛山 · 顺德</small></button>
+    <button data-v="v3">汕尾版<small>广州 · 汕尾 · 深圳</small></button>
+  </nav>
+
+  <!-- ============ V1 优化版 ============ -->
+  <section class="ver on" id="v1">
+    <div class="route">昆明 <span>→</span> 广州（演唱会）<span>→</span> 汕头 · 潮州 <span>→</span> 昆明</div>
+    <div class="trade"><b>这一版的取舍：</b>按已定下来的最优解走——下午飞、场馆旁连住、潮汕吃喝拉满。代价是 12/7 晚上住汕头、12/8 回程要先确认直飞，确认不了就走深圳兜底（要早起）。</div>
+
+    <div class="day"><h2><span class="d">12/5</span>周六 · 昆明 → 广州</h2>
+      <div class="ev"><div class="tm">11:30</div><div class="tx"><b>前往昆明长水机场</b><p>提前 1.5–2 小时到，午餐在机场简单解决，不赶。</p></div></div>
+      <div class="ev"><div class="tm">13:05–15:10</div><div class="tx"><b>首选：东航 MU9689 昆明 → 广州</b><span class="tag">推荐</span><p>下午落地节奏最舒服。备选南航 CZ3416（14:40–16:50）。票价下单前在航司 App 复核。</p></div></div>
+      <div class="ev"><div class="tm">17:30</div><div class="tx"><b>入住天河体育中心周边 · 舒适型 · 连住 2 晚</b><p>核心收益在 12/6 散场：步行回酒店，不跟几万人抢地铁和打车。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>珠江新城 / 广州塔夜景轻逛</b><p>只轻逛不排满：吃顿粤菜、看广州塔亮灯，早点休息，体力留给演唱会日。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/6</span>周日 · 演唱会日</h2>
+      <div class="ev"><div class="tm">上午</div><div class="tx"><b>睡到自然醒 · 天河一带早午餐</b><p>白天不安排远景点，避免暴走，留体力给晚上。</p></div></div>
+      <div class="ev"><div class="tm">16:00</div><div class="tx"><b>提前吃晚饭</b><p>17 点前进场动线开始拥挤，先在体育西 / 天河城一带吃饱再往场馆走。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>周杰伦「时光机」广州站 · 天河体育中心体育场</b><span class="tag">门票已购</span><p>12/4–12/6 三场中的最后一场。露天场，夜里约 11–13°C，带防风外套；实名入场，身份证随身。</p></div></div>
+      <div class="ev"><div class="tm">散场后</div><div class="tx"><b>步行回酒店</b><p>散场人流最大时不打车、不挤首班地铁，步行是最稳的收尾。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/7</span>周一 · 广州 → 汕头 · 潮州</h2>
+      <div class="ev"><div class="tm">09:30</div><div class="tx"><b>退房 · 前往广州东站</b><p>行李直接带走，今晚住汕头，不回广州。</p></div></div>
+      <div class="ev"><div class="tm">11:00–12:53</div><div class="tx"><b>G8438 广州东 → 汕头（1 小时 53 分）</b><span class="tag">推荐</span><p>目前核到的最快一班。12/7 的票约 11/22 开售，12306 复核余票。</p></div></div>
+      <div class="ev"><div class="tm">13:30</div><div class="tx"><b>汕头小公园老城 · 午餐</b><p>中山纪念亭、骑楼老街一带边吃边逛：粿条、蚝烙、牛肉丸。</p></div></div>
+      <div class="ev"><div class="tm">下午</div><div class="tx"><b>潮州古城半日游</b><p>广济桥、牌坊街、开元寺一线，半天走完精华；从汕头过去约 1 小时，当晚回汕头住。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>汕头住 1 晚（小公园附近 · 舒适型）· 牛肉火锅收尾</b><p>吃完早休息——如果回程走深圳兜底，明天要早起。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/8</span>周二 · 回昆明</h2>
+      <div class="ev"><div class="tm">中午前后</div><div class="tx"><b>方案 A（优先）：揭阳潮汕机场直飞昆明</b><span class="tag todo">待确认</span><p>最省事。12/8 当天中午前后是否有直飞，订票时在航司 / OTA 确认，有就直接订。</p></div></div>
+      <div class="ev"><div class="tm">06:25 起</div><div class="tx"><b>方案 B（兜底）：汕头 → 深圳北 → 飞昆明</b><span class="tag alt">备选</span><p>06:25 高铁到深圳北，接东航 MU5758（深圳 11:20 → 昆明 13:35）。衔接够用，代价是早起。</p></div></div>
+      <div class="ev"><div class="tm">下午</div><div class="tx"><b>抵达昆明 · 行程结束</b></div></div>
+    </div>
+
+    <div class="box"><h3>出发前待办</h3><ul>
+      <li><b>订 12/5 去程机票 ×2</b>：MU9689 首选，CZ3416 备选</li>
+      <li><b>订酒店</b>：广州天河 2 晚 + 汕头小公园 1 晚，舒适型 300–600</li>
+      <li><b>订 G8438</b>：约 11/22 开售，12306 抢 11:00 那班</li>
+      <li><b>查 12/8 回程</b>：先直飞、查不到立刻订深圳兜底，别拖</li>
+      <li>带防风外套；身份证随身（全程实名）</li>
+    </ul></div>
+  </section>
+
+  <!-- ============ V2 广佛版 ============ -->
+  <section class="ver" id="v2">
+    <div class="route">昆明 <span>→</span> 广州（演唱会）<span>→</span> 佛山 · 顺德 <span>→</span> 广州直飞昆明</div>
+    <div class="trade"><b>这一版的取舍：</b>全程住广州不搬家，12/7 睡到自然醒去佛山，12/8 中午从广州直飞回家——三版里最松弛、最不折腾。代价是没有潮汕、没有海，吃喝靠顺德补（其实也不亏）。</div>
+
+    <div class="day"><h2><span class="d">12/5</span>周六 · 昆明 → 广州</h2>
+      <div class="ev"><div class="tm">11:30</div><div class="tx"><b>前往昆明长水机场</b><p>提前 1.5–2 小时到，午餐在机场简单解决。</p></div></div>
+      <div class="ev"><div class="tm">13:05–15:10</div><div class="tx"><b>首选：东航 MU9689 昆明 → 广州</b><span class="tag">推荐</span><p>备选南航 CZ3416（14:40–16:50）。票价下单前在航司 App 复核。</p></div></div>
+      <div class="ev"><div class="tm">17:30</div><div class="tx"><b>入住天河体育中心周边 · 舒适型 · 连住 3 晚</b><p>这一版全程不搬家，行李放着，人轻装出门。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>珠江新城 / 广州塔夜景轻逛</b><p>吃顿粤菜、看广州塔亮灯，早点休息。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/6</span>周日 · 演唱会日</h2>
+      <div class="ev"><div class="tm">上午</div><div class="tx"><b>睡到自然醒 · 天河一带早午餐</b><p>白天不排远景点，留体力给晚上。</p></div></div>
+      <div class="ev"><div class="tm">16:00</div><div class="tx"><b>提前吃晚饭</b><p>体育西 / 天河城一带吃饱，再慢慢往场馆走。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>周杰伦「时光机」广州站 · 天河体育中心体育场</b><span class="tag">门票已购</span><p>露天场，夜里约 11–13°C，带防风外套；实名入场，身份证随身。</p></div></div>
+      <div class="ev"><div class="tm">散场后</div><div class="tx"><b>步行回酒店</b><p>不打车、不挤地铁，步行收尾。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/7</span>周一 · 佛山一日（顺德吃喝）</h2>
+      <div class="ev"><div class="tm">09:30</div><div class="tx"><b>轻装出发去佛山</b><p>高铁广州南 → 佛山西约 20 分钟，或地铁广佛线直达祖庙一带；不用退房，行李留酒店。</p></div></div>
+      <div class="ev"><div class="tm">10:30</div><div class="tx"><b>祖庙 + 岭南天地</b><p>祖庙看黄飞鸿纪念馆和舞狮，出来就是岭南天地，骑楼老街边逛边吃，节奏随便放慢。</p></div></div>
+      <div class="ev"><div class="tm">下午</div><div class="tx"><b>顺德大良吃一圈</b><p>从祖庙过去约 40 分钟：双皮奶、鱼生、啫啫煲、伦教糕——「世界美食之都」不是白叫的。不想跑就在佛山本地吃粤菜。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>回广州 · 天河酒店第 3 晚</b><p>高铁 / 地铁回程班次密，不用赶；早点休息，明天中午飞。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/8</span>周二 · 广州直飞回昆明</h2>
+      <div class="ev"><div class="tm">上午</div><div class="tx"><b>睡到自然醒 · 退房去白云机场</b><p>天河到白云机场地铁约 1 小时，提前 2 小时到即可。</p></div></div>
+      <div class="ev"><div class="tm">中午</div><div class="tx"><b>直飞广州 → 昆明（约 2.5 小时）</b><span class="tag">推荐</span><p>现行时刻表的中午前后选择：川航 3U8206（10:25–13:00）、南航 CZ3415（10:55–13:35）、东航 MU5732（11:20–14:10）。12/8 当天班次以下单时航司 App 为准。</p></div></div>
+      <div class="ev"><div class="tm">下午</div><div class="tx"><b>抵达昆明 · 行程结束</b></div></div>
+    </div>
+
+    <div class="box"><h3>出发前待办</h3><ul>
+      <li><b>订 12/5 去程机票 ×2</b>：MU9689 首选，CZ3416 备选</li>
+      <li><b>订酒店</b>：广州天河连住 3 晚，舒适型 300–600</li>
+      <li><b>订 12/8 回程直飞</b>：中午前后三班里挑一班，不用中转、不用早起</li>
+      <li>祖庙门票可现场买；顺德餐厅热门，晚餐可提前订位</li>
+      <li>带防风外套；身份证随身（全程实名）</li>
+    </ul></div>
+  </section>
+
+  <!-- ============ V3 汕尾版 ============ -->
+  <section class="ver" id="v3">
+    <div class="route">昆明 <span>→</span> 广州（演唱会）<span>→</span> 汕尾看海 <span>→</span> 深圳飞昆明</div>
+    <div class="trade"><b>这一版的取舍：</b>群里 battle 出来的看海版——12/7 下午在汕尾红海湾，晚上顺高铁到深圳，12/8 中午直飞回昆明，回程时刻是确定的。代价是砍掉潮州古城和潮汕牛肉火锅，而且 12 月的海只能看、不能下水。</div>
+
+    <div class="day"><h2><span class="d">12/5</span>周六 · 昆明 → 广州</h2>
+      <div class="ev"><div class="tm">11:30</div><div class="tx"><b>前往昆明长水机场</b><p>提前 1.5–2 小时到，午餐在机场简单解决。</p></div></div>
+      <div class="ev"><div class="tm">13:05–15:10</div><div class="tx"><b>首选：东航 MU9689 昆明 → 广州</b><span class="tag">推荐</span><p>备选南航 CZ3416（14:40–16:50）。票价下单前在航司 App 复核。</p></div></div>
+      <div class="ev"><div class="tm">17:30</div><div class="tx"><b>入住天河体育中心周边 · 舒适型 · 连住 2 晚</b><p>散场步行回酒店，这是演唱会这趟的根基，三版都一样。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>珠江新城 / 广州塔夜景轻逛</b><p>吃顿粤菜、看广州塔亮灯，早点休息。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/6</span>周日 · 演唱会日</h2>
+      <div class="ev"><div class="tm">上午</div><div class="tx"><b>睡到自然醒 · 天河一带早午餐</b><p>白天不排远景点，留体力给晚上。</p></div></div>
+      <div class="ev"><div class="tm">16:00</div><div class="tx"><b>提前吃晚饭</b><p>体育西 / 天河城一带吃饱，再往场馆走。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>周杰伦「时光机」广州站 · 天河体育中心体育场</b><span class="tag">门票已购</span><p>露天场，夜里约 11–13°C，带防风外套；实名入场，身份证随身。</p></div></div>
+      <div class="ev"><div class="tm">散场后</div><div class="tx"><b>步行回酒店</b><p>明天要赶上午的高铁，散场别再加夜宵局。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/7</span>周一 · 广州 → 汕尾看海 → 深圳</h2>
+      <div class="ev"><div class="tm">08:00</div><div class="tx"><b>退房 · 前往广州南站</b><p>行李带走，今晚住深圳。</p></div></div>
+      <div class="ev"><div class="tm">约 1 小时 40 分</div><div class="tx"><b>高铁 广州南 → 汕尾</b><span class="tag">推荐</span><p>广汕高铁班次密，现行时刻里上午有 08:17、11:19 等多班可选（全程约 1 小时 40 分–1 小时 50 分）。订上午 9 点前后的班次，下午才够玩；12306 复核当日车次。</p></div></div>
+      <div class="ev"><div class="tm">中午</div><div class="tx"><b>汕尾市区海鲜午餐</b><p>先吃一顿海鲜大排档，再去海边。</p></div></div>
+      <div class="ev"><div class="tm">下午</div><div class="tx"><b>红海湾（遮浪）看海</b><p>汕尾站打车约半小时。12 月海边以看海、散步、拍照为主，不下水，海风大，外套穿厚点。时间紧就改去更近的金町湾。</p></div></div>
+      <div class="ev"><div class="tm">约 51 分钟</div><div class="tx"><b>高铁 汕尾 → 深圳北</b><p>傍晚班次回深圳，现行时刻约 51 分钟一班接一班；到深圳后住深圳北或宝安机场附近。</p></div></div>
+      <div class="ev"><div class="tm">晚上</div><div class="tx"><b>深圳住 1 晚（深圳北 / 宝安 · 舒适型）</b><p>早点休息，明天中午飞，不用早起赶路。</p></div></div>
+    </div>
+
+    <div class="day"><h2><span class="d">12/8</span>周二 · 深圳直飞回昆明</h2>
+      <div class="ev"><div class="tm">上午</div><div class="tx"><b>睡到自然醒 · 去宝安机场</b><p>深圳北到宝安机场地铁约 40 分钟–1 小时，提前 2 小时到。</p></div></div>
+      <div class="ev"><div class="tm">11:20–13:35</div><div class="tx"><b>东航 MU5758 深圳 → 昆明</b><span class="tag">推荐</span><p>现行时刻表班次；也可看国航 CA5778（10:35–12:55）。12/8 当天以下单时航司 App 为准。</p></div></div>
+      <div class="ev"><div class="tm">下午</div><div class="tx"><b>抵达昆明 · 行程结束</b></div></div>
+    </div>
+
+    <div class="box"><h3>出发前待办</h3><ul>
+      <li><b>订 12/5 去程机票 ×2</b>：MU9689 首选，CZ3416 备选</li>
+      <li><b>订酒店</b>：广州天河 2 晚 + 深圳 1 晚，舒适型 300–600</li>
+      <li><b>订两段高铁</b>：12/7 广州南 → 汕尾（上午班）、汕尾 → 深圳北（傍晚班），约 11/22 起开售</li>
+      <li><b>订 12/8 深圳回程机票</b>：MU5758 中午班，不用早起</li>
+      <li>带防风外套（海边风大，再加一件）；身份证随身（全程实名）</li>
+    </ul></div>
+  </section>
+
+  <p class="note">说明：三个版本共用同一套已核实信息（演唱会场馆与日期、12/5 下午航班、酒店档次与人数按本人确认）。标「待确认 / 现行时刻表」的班次为当前时刻表参考，12/5–12/8 当天的车次与航班以下单时 12306 / 航司 App 为准；票价未写入，下单时实时确认。</p>
+  <footer>昆明出发 · 2026 年 12 月 5 日 – 8 日 · 周杰伦「时光机」广州站</footer>
+</div>
+<script>
+  var tabs = document.getElementById('tabs');
+  function show(v){
+    tabs.querySelectorAll('button').forEach(function(b){ b.classList.toggle('on', b.dataset.v === v); });
+    document.querySelectorAll('section.ver').forEach(function(s){ s.classList.toggle('on', s.id === v); });
+    if (history.replaceState) history.replaceState(null, '', '#' + v);
+  }
+  tabs.addEventListener('click', function(e){
+    var b = e.target.closest('button'); if (b) show(b.dataset.v);
+  });
+  var h = (location.hash || '').replace('#','');
+  if (['v1','v2','v3'].indexOf(h) >= 0) show(h);
+</script>
+</body>
+</html>
